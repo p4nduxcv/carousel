@@ -133,3 +133,9 @@ img {
 .d-block {
   display: block;
 }
+
+/* take images to same size */
+.carousel {
+  width: 640px;
+  height: 360px;
+}
