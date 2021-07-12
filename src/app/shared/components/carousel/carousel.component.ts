@@ -10,7 +10,7 @@ import { CarouselService } from 'src/app/services/carousel.service';
   styleUrls: ['./carousel.component.css'],
 })
 export class CarouselComponent implements OnInit {
-  // input properties
+  // input properties for cominicate app component
   @Input() slides: number = 5;
   @Input() infinite: boolean = true;
 
