@@ -1,4 +1,7 @@
+// core
 import { Component, Input, OnInit } from '@angular/core';
+
+// services
 import { CarouselService } from 'src/app/services/carousel.service';
 
 @Component({
@@ -7,8 +10,10 @@ import { CarouselService } from 'src/app/services/carousel.service';
   styleUrls: ['./carousel.component.css'],
 })
 export class CarouselComponent implements OnInit {
+  // input properties
   @Input() slides: number = 5;
   @Input() infinite: boolean = true;
+
   currentSlideIndex = 0;
   currentSlides = [];
 
