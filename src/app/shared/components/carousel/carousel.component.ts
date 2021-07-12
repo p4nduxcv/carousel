@@ -19,4 +19,20 @@ export class CarouselComponent implements OnInit {
       this.currentSlides = data;
     });
   }
+
+  plusSlides(n) {
+    this.currentSlideIndex += n;
+
+    if (this.currentSlideIndex > this.currentSlides.length - 1) {
+      this.currentSlideIndex = this.infinite
+        ? 0
+        : this.currentSlides.length - 1;
+    }
+
+    if (this.currentSlideIndex < 0) {
+      this.currentSlideIndex = this.infinite
+        ? this.currentSlides.length - 1
+        : 0;
+    }
+  }
 }
